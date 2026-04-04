@@ -8,8 +8,6 @@ const bowl = makePottery("bowl", 17, 7)
 const vase = makePottery("vase", 29, 11)
 const plate = makePottery("plate", 4, 1)
 const cup = makePottery("cup", 3, 2)
-
-
 // Make 5 pieces of pottery at the wheel
 const firedMug = firePottery(mug, 2000)
 const firedBowl = firePottery(bowl, 2100)
