@@ -1,9 +1,9 @@
 const catalog = [] //empty array to hold fired pottery objects that are ready to be sold
 
 export const toSellOrNotToSell = (pottery) => {
-    // Can't sell cracked pottery
-    if (pottery.cracked) {
-        return pottery
+    // Can't sell cracked pottery - UPdate cracked pottery is $2.50
+    if (pottery.cracked === true) {
+        pottery.price = 2.50; // Set a low price for cracked pottery
     }
     //$40 pottery
     if (pottery.weight >= 6) {
