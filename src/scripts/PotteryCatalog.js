@@ -6,7 +6,7 @@ export const toSellOrNotToSell = (pottery) => {
         pottery.price = 2.50; // Set a low price for cracked pottery
     }
     //$40 pottery
-    if (pottery.weight >= 6) {
+    else if (pottery.weight >= 6) {
         pottery.price = 40;
     } else {
         // $20 pottery
@@ -24,17 +24,3 @@ export const usePottery = () => {
 
 
 
-
-/*  
-export function toSellOrNotToSell(firedPottery) {
-    const ? {//having trouble nto sure what to put here, should I be using an if statement or a switch statement?
-    if (firedPottery.weight >= 6) {
-        firedPottery.price = 40;
-    } else if (firedPottery.weight < 6) {
-        firedPottery.price = 20;
-} else if (firedPottery.cracked === true !==0) {
-        firedPottery.price = 0;
-
-    }
-}
-}*/
